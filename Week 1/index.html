@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Week 1 Task 1</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <h1>
+        Covid-19 cases in Victoria
+    </h1>
+
+    <h2>
+        This is a week-wise data
+    </h2>
+
+    <p style="color: brown;">
+        These are the predicted numbers given by Department of Health and Human Services, Victoria
+    </p>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Week 1 = 10</p>
+            <p>Week 2 = 25</p>
+            <p>Week 3 = 50</p>
+            <p>Week 4 = 65</p>
+            <p>Week 5 = 100</p>
+            <p>Week 6 = 30</p>
+            <p>Week 7 = 15</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Victoria has shown a graph of cases which kept on increasing till Week 5 and then had a sudden drop which leads us to believing that its getting safer here</p>
+        </div>
+    </div>
+    <img src="data:image/png;base64,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">
+    <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+    <h1>Calculate the average.</h1>
+    <button type="button" onclick="calculateAverage()">
+      The average case is:
+    </button>
+    <script src="main.js"></script>
+</body>
+
+</html>

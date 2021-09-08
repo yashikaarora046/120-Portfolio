@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <div id="Testing1">{{ message1 }}</div>
+    <h1>---------------------</h1>
+    <div id="Testing2">
+        <span v-bind:title="message2">
+        [Get your mouse on this text for current date and time.]
+      </span>
+    </div>
+    <script>
+        var testing1 = new Vue({
+            el: '#Testing1',
+            data: {
+                message1: 'Example of Declarative Rendering :D'
+            }
+        })
+        var testing1 = new Vue({
+            el: '#Testing2',
+            data: {
+                message2: 'The current date and time: ' + new Date().toLocaleString()
+            }
+        })
+    </script>
+</body>
+
+</html>

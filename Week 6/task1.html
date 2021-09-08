@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p v-bind:title="test"> SIT 120 Week 6 Task 1</p>
+        <br><br>
+        <p>Name: </p>
+        <input type="text" v-model.lazy="name" placeholder="Please type name here">
+        <p>Password: </p>
+        <input type="password" v-model.lazy="password" placeholder="Please enter password">
+        <p>Email: </p>
+        <input type="text" v-model.lazy="email" placeholder="Please type email here">
+        <br>
+
+
+        <span>Your details: </span>
+        <p style="white-space: pre-line;">{{name}} {{password}} {{email}}</p>
+        <br>
+
+        <input type="radio" id="option1" value="Amazon" v-model="picked">
+        <label for="option1">Option 1</label>
+        <br>
+        <input type="radio" id="option2" value="Flipkart" v-model="picked">
+        <label for="option2">Option 2</label>
+        <br>
+        <span>You picked: {{ picked }}</span>
+
+
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                test: " SIT 120 Week 6 Task 1",
+                name: "",
+                password: "",
+                email: "",
+                picked: '',
+            },
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Most Used Shopping Apps Survey
+    </title>
+
+    <style>
+        body {
+            background-color: #8B0000;
+            font-family: American Typewriter;
+            text-align: center;
+        }
+        
+        form {
+            background-color: #FF8C00;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px 30px;
+            box-shadow: 4px 6px 10px rgba(0, 0, 0.5, 0.5);
+        }
+        
+        .form-control {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        
+        .form-control label {
+            display: block;
+            margin-bottom: 20px;
+        }
+        
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 2px solid #FFFFF0;
+            border-radius: 3px;
+            font-family: American Typewriter;
+            padding: 15px;
+            display: block;
+            width: 97%;
+        }
+        
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        
+        button {
+            background-color: #05c46b;
+            border: 2px solid #777;
+            border-radius: 4px;
+            font-family: American Typewriter;
+            font-size: 30px;
+            display: block;
+            width: 100%;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Most Used Shopping Apps Survey</h1>
+
+
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+				Name
+			</label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" placeholder="Please tell us your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="instagram" id="label-instagram">
+				Instagram
+			</label>
+
+            <!-- Input Type Instagram-->
+            <input type="instagram" id="instagram" placeholder="Please enter your instagram id to keep seeing posts from our website" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+				Age
+			</label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" placeholder="Please enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+				Which option is the best way to describe your personality?
+			</label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+				<option value="introvert">Introvert</option>
+				<option value="ambivert">Ambivert</option>
+				<option value="extrovert">Extrovert</option>
+				<option value="other">Other</option>
+			</select>
+        </div>
+
+        <div class="form-control">
+            <label>
+				Would you spend 1000$ on shoes if they guarantee you a lifetime?
+			</label>
+
+            <!-- Input Type Radio Button -->
+            <label for="inp-1">
+				<input type="radio"
+					id="inp-1"
+					name="inp">Yes
+			</label>
+            <label for="inp-2">
+				<input type="radio"
+					id="inp-2"
+					name="inp">No
+			</label>
+
+
+            <div class="form-control">
+                <label>Do you prefer shopping online or offline?
+			</label>
+                <!-- Input Type Checkbox -->
+                <label for="inp-1">
+				<input type="checkbox"
+					name="inp">Online</label>
+                <label for="inp-2">
+				<input type="checkbox"
+					name="inp">Offline</label>
+
+
+                <div class="form-control">
+                    <label for="comment">
+				Drop down you favourite online shops and we will send you the best exclusive offers they have to offer
+			</label>
+
+                    <!-- multi-line text input control -->
+                    <textarea name="comment" id="comment" placeholder="Enter your comment here">
+			</textarea>
+                    <!-- Multi-line Text Input Control -->
+                    <button type="submit" value="submit">
+			Submit
+		</button>
+
+                </div>
+                <div class="Share">
+                    <button>Share this Survey</button>
+                </div>
+
+                <div class="overlay"></div>
+                <div class="Share">
+                    <button>https://www.instagram.com/</button>
+                </div>
+
+
+
+
+    </form>
+</body>
+
+</html>

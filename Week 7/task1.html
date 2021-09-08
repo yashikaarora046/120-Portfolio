@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <login></login>
+    </div>
+    <script>
+        var textInput = {
+            template: '<div><input type="Password" name="Pass" placeholder="What is your password?"><br></div>'
+        }
+
+        Vue.component("login", {
+            template: '<div><label><b>Password</b></label> \
+                <text-input></text-input> \
+                <input type="button" name="log" value="Log In" v-on:click="login"></div>',
+            components: {
+                'text-input': textInput
+            },
+            methods: {
+                login() {
+                    alert("you have logged in");
+                },
+            },
+        })
+        var app = new Vue({
+            el: "#app",
+
+        })
+    </script>
+
+
+</body>
+
+</html>
